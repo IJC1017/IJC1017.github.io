@@ -1,0 +1,423 @@
+
+/*==============================================
+   Theme Color Css
+===============================================*/
+.btn-one {
+    color: #fd5d14;
+}
+.thm_clr1{
+    color: #fd5d14;    
+}
+.main-slider .content h2 span{
+    color: #fd5d14;
+}
+.sec-title p{
+    color: #fd5d14;
+}
+.twitter-feed-box span {
+    color: #fd5d14;
+}
+.twitter-feed-box .bottom .comments a i {
+    color: #fd5d14;
+}
+.single-service-style3 .overlay-content .title-holder p {
+    color: #fd5d14;
+}
+.slogan-content .quote-button a {
+    color: #fd5d14;
+}
+
+
+/*==============================================
+   Theme Hover Color Css
+===============================================*/
+.main-menu .navigation>li:hover>a,
+.main-menu .navigation>li.current>a{
+	color: #fd5d14;
+}
+.main-menu .navigation>li>ul>li>a:hover {
+	color: #fd5d14;
+}
+.main-menu .navigation> li> ul> li> a:before{
+    color: #fd5d14;
+}
+.main-menu .navigation> li> ul> li:hover > a{
+	color: #fd5d14;
+}
+.main-menu .navigation> li> ul> li> ul> li> a:hover {
+	color: #fd5d14;
+}
+.main-menu .navigation>li>ul>li>ul>li a:before{
+    color: #fd5d14;
+}
+.main-menu.style2 .navigation>li:hover>a,
+.main-menu.style2 .navigation>li.current>a{
+	color: #fd5d14;
+}
+.main-menu.style2.clr-white .navigation>li:hover>a,
+.main-menu.style2.clr-white .navigation>li.current>a{
+	color: #fd5d14;
+}
+.sticky-header .main-menu .navigation>li:hover>a, 
+.sticky-header .main-menu .navigation>li.current>a {
+    color: #fd5d14;
+}
+
+
+.outer-search-box-style1 .seach-toggle:hover,
+.outer-search-box-style1 .seach-toggle.active{
+    color: #fd5d14;
+}
+.social-links-style1 li a:hover i {
+    background: #fd5d14;
+}
+.single-footer-widget .page-links li a:hover{
+    color: #fd5d14;    
+}
+.single-service-style3 .overlay-content .title-holder h3 a:hover {
+    color: #fd5d14;
+}
+
+
+
+
+/*==============================================
+   Theme Background Css
+===============================================*/
+.thm-bgclr1{
+    background-color: #ffe701;
+}
+.thm_bgclr2{
+    background-color: #0c67c4;    
+}
+.thm_bgclr3{
+    background-color: #33c7c5;    
+}
+.main-menu .navigation>li>a span.homeicon {
+    background: #fd5d14;
+}
+.main-slider .content h3:before{
+    background: rgba(253, 93, 19, 0.40);
+}
+.single-portfolio-style1 .img-holder .title-holder:before {
+    background-color: #fd5d14;
+}
+.testimonial-style1-title-box:before {
+    background: #fd5d14;
+}
+.main-menu.style2 .navigation>li>a span.homeicon {
+    background: #fd5d14;
+}
+.single-service-style3 .overlay-content .icon-holder {
+    background: #fd5d14;
+}
+.video-holder-box-style3 a span:before {
+    background: #fd5d14;
+}
+.slogan-area {
+    background: #fd5d14;
+}
+.slogan-content.style2 .quote-button a{
+    background: #fd5d14;    
+}
+.quote-button.style3 a {
+    background: #fd5d14;
+}
+.video-galler-outer-bg:before {
+    background-color: rgba(253, 93, 19, 0.80);
+}
+.video-holder-box-style5 .icon .inner a span:before {
+    background: #fd5d14;
+}
+
+
+
+/*==============================================
+   Theme Hover Background Color Css
+===============================================*/
+.btn-one:hover,
+.btn-one:focus{
+    background: #fd5d14;
+}
+.owl-nav-style-one.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: #fd5d14;
+}
+.single-footer-widget .page-links li a:hover:before{
+    background: #fd5d14;    
+}
+.owl-carousel.owl-dot-style1 .owl-dots .owl-dot.active{
+    background: #fd5d14;
+}
+.accordion-box .accordion .accord-btn.active {
+    background: #fd5d14;
+}
+.slogan-content .quote-button a:hover{
+    background: #ec520c;
+}
+
+
+/*==============================================
+   Theme Border Color Css
+===============================================*/
+.btn-one {
+    border: 2px solid #fd5d14;
+}
+.btn-one:hover,
+.btn-one:focus{
+    border: 2px solid #fd5d14;
+}
+.single-blog-post-style3.withbdr {
+    border: 5px solid #fd5d14;
+}
+
+
+
+
+
+
+
+
+
+/*==============================================
+   Theme Other Color, Background, Hover, Active Css
+===============================================*/
+.header-social-links .social-links-style1 li a:hover{
+    color: #fd5d14;
+}
+.header-menu ul li a:hover{
+    color: #fd5d14;
+}
+.quote-button a span:before {
+    color: #fd5d14;
+}
+.quote-button a:hover{
+    background: #fd5d14;
+}
+.main-slider .content .btns-box .btn-one{
+    border-color: #fd5d14;
+    background: #fd5d14;
+}
+.main-slider .content .btns-box .btn-two:hover{
+    border-color: #fd5d14;
+    background: #fd5d14;
+}
+.main-slider .owl-theme .owl-dots .owl-dot.active{
+    background: #fd5d14;
+}
+.main-slider .owl-theme .owl-dots .owl-dot.active:before{
+    background: #fd5d14;
+}
+.service-style1-area .title h1 a{
+    color: #fd5d14;
+    border-bottom: 1px solid #fd5d14;
+}
+.single-service-style1 .text-holder .count-box {
+    background: #ffeee7;
+}
+.single-service-style1 .text-holder .count-box:before{
+    background: #fd5d14; 
+}
+.video-holder-box .icon .inner a span:before {
+    background: #fd5d14;
+}
+.about-style1-text-box .title p{
+    color: #fd5d14;
+}
+.about-style1-text-box .title h1 b{
+    color: #fd5d14;
+}
+.about-style1-text-box .title h1 span{
+    background: #fd6414;
+}
+.single-service-style2 .img-holder .static-content .title:before {
+    border: 2px solid #fd5d14;
+}
+.single-service-style2 .img-holder .static-content .icon a {
+    background: #fd5d14;
+}
+.single-service-style2 .overlay-content .inner-content .icon {
+    color: #fd5d14;
+}
+.single-service-style2 .overlay-content .inner-content .text-holder .title:before {
+    border: 2px solid #fd5d14;
+}
+.single-service-style2 .overlay-content .inner-content .text-holder .title h3 a:hover{
+    color: #fd5d14;    
+}
+.single-fact-counter .count-box h1 {
+    color: #fd5d14;
+}
+.project-filter li:hover .filter-text, 
+.project-filter li.active .filter-text {
+    color: #fd5d14;
+}
+.single-portfolio-style1 .img-holder .inner-box .zoom-button a span:before {
+    background: #fd5d14;
+}
+.single-portfolio-style1 .img-holder .title-holder span.tag {
+    color: #fd5d14;
+    background: rgba(253, 93, 19, 0.20);
+}
+.single-portfolio-style1 .img-holder .title-holder p span:before {
+    color: #fd5d14;
+}
+.single-testimonial-style1:before {
+    color: #fd5d14;
+}
+.single-testimonial-style1 .client-info .icon-box span:before {
+    color: #fd5d14;
+}
+.single-testimonial-style1 .client-info .title-box h3 {
+    color: #fd5d14;
+}
+.single-team-member .title-holder .inner .right a {
+    background: #fd5d14;
+}
+.single-team-member .title-holder:before {
+    background: #fd5d14;
+}
+.single-blog-post .img-holder .post-date p {
+    background: #fd5d14;
+}
+.single-blog-post .text-holder .blog-title a:hover {
+    color: #fd5d14;
+}
+.single-blog-post .text-holder .bottom .author-name a span:before {
+    color: #fd5d14;
+}
+.single-blog-post .text-holder .bottom .read-more-button a {
+    color: #fd5d14;
+}
+.copyright-text:before {
+    background: #fd5d14;
+}
+.footer-menu ul li a:hover {
+    color: #fd5d14;
+}
+.scroll-top {
+    color: #fd5d14;
+    border: 2px solid #fd5d14;
+}
+.scroll-top:hover{
+    background: #fd5d14;
+}
+.quote-button.style2 a {
+    background: #fd5d14;
+}
+.video-holder-box-style4 a span:before {
+    background: #fd5d14;
+}
+.video-holder-box.style2 .icon .inner a span:before {
+    color: #fd5d14;
+}
+.about-style2-area {
+    background: #fd5d14;
+}
+.single-portfolio-style2 .overlay-content .title-holder p {
+    color: #fd5d14;
+}
+.single-portfolio-style2 .overlay-content .title-holder h3 a:hover {
+    color: #fd5d14;
+}
+.single-portfolio-style2 .overlay-content .icon-holder {
+    background: #fd5d14;
+}
+.single-testimonial-style1.style3 .client-info .icon-box span:before {
+    border: 1px solid #fd5d14;
+    background: #fd5d14;
+}
+.breadcrumb-area .breadcrumb-menu ul li.active{
+    color: #fd5d14;   
+}
+.breadcrumb-area .breadcrumb-menu ul li a:hover{
+    color: #fd5d14;     
+}
+.brochures-box ul li .left .icon span:before {
+    color: #fd5d14;
+}
+.brochures-box ul li .left h5 a {
+    color: #fd5d14;
+}
+.header-contact-info ul li .title h6 a:hover{
+    color: #fd5d14;    
+}
+.single-blog-post-style3 .text-holder .blog-title a:hover {
+    color: #fd5d14;    
+}
+
+.styled-pagination li a:hover,
+.styled-pagination li a.active{
+	color: #fd5d14;
+}
+.styled-pagination li.next a {
+    background: #fd5d14;
+}
+.portfolio-single-video-box a span:before {
+    background: #fd5d14;
+}
+.project-info-box{
+    background: #fd5d14;
+}
+.portfolio-details-content-box .tag{
+    color: #fd5d14;
+}
+.project-info-box.style2 {
+    background: #fd5d14;
+}
+.comment-meta-box li a:hover{
+    color: #fd5d14;
+}
+.add-comment-box #add-comment-form button {
+    background: #fd5d14;
+}
+.add-comment-box #add-comment-form button:hover{
+    color: #fd5d14;
+}
+.team-member-info-box .social-links-style1 li a:hover i{
+    background: #fd5d14;
+}
+.single-partner-logo-box-style2:hover a img{
+    background: #fd5d14;
+}
+.single-blog-post-style3 .text-holder h4{
+    color: #fd5d14;
+}
+.single-blog-post-style3 .text-holder .button-box .readmore a.btn-one {
+    background: #fd5d14;
+}
+.single-blog-post-style3 .text-holder .button-box .readmore a.btn-one:hover{
+    color: #fd5d14;
+}
+.single-blog-post-style3 .quote-box .icon {
+    background: #fd5d14;
+}
+.single-blog-post-style3 .img-holder .overlay a{
+    color: #fd5d14;
+}
+.categories li a:hover{
+    color: #fd5d14;
+}
+.single-sidebar .popular-tag li a:before {
+    background: #fd5d14;
+}
+.single-sidebar .project-box .project-lists li a:hover{
+    color: #fd5d14;    
+}
+.single-sidebar .ratting-box .ratting-lists li a:hover{
+    color: #fd5d14;    
+}
+.sidebar-bottom-box .img-holder .overlay a span:before{
+    background: #fd5d14;
+}
+.blog-single-quote-box {
+    background: #fd5d14;
+}
+.single-contact-info-box .icon span:before{
+    color: #fd5d14;
+}
+.contact-form form button {
+    background: #fd5d14;
+}
+.contact-form form button:hover{
+    color: #fd5d14;
+}

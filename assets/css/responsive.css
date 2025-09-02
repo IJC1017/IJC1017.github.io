@@ -1,0 +1,1737 @@
+
+/* Large Layout: 1200px. */
+@media only screen and (min-width: 1200px){
+
+    
+   
+    
+    
+    
+    
+    
+    
+ 
+    
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1220px) { 
+/*** Main Header Css ***/        
+.header-top-left {
+    max-width: 385px;
+}    
+.header-top-middle {
+    max-width: 385px;
+}    
+.header-top-right {
+    max-width: 380px;
+}
+    
+    
+    
+}
+
+
+/* Medium screen  */ 
+@media only screen and (min-width: 992px) and (max-width: 1199px) { 
+ 
+/*** Main Header Css ***/     
+.header-top-left {
+    max-width: 340px;
+}
+.header-top-middle {
+    max-width: 200px;
+}  
+.header-top-right {
+    max-width: 320px;
+}
+.header-contact-info ul li {
+    margin-right: 50px;
+}  
+
+/*** Main Slider Css ***/         
+.main-slider .auto-container {
+    padding: 0px 50px;
+}
+
+/*** About Style1 Area Css ***/
+.about-style1-area .shape {
+    left: -100px;
+    bottom: 25px;
+}    
+.about-style1-image-box {
+    max-width: 670px;
+}    
+.about-style1-text-box {
+    padding-left: 0px;
+    padding-top: 60px;
+}    
+    
+/*** Service Style2 Area Css ***/    
+.single-service-style2 .img-holder .static-content {
+    padding-left: 10px;
+}    
+.single-service-style2 .img-holder .static-content .title {
+    padding-left: 20px;
+}   
+.single-service-style2 .img-holder .static-content .title h3 {
+    font-size: 15px;
+}    
+.single-service-style2 .img-holder .static-content .icon a {
+    width: 60px;
+    height: 70px;
+    font-size: 30px;
+}        
+.single-service-style2 .overlay-content .inner-content .text-holder {
+    padding: 0px 20px 41px;
+}    
+.single-service-style2 .overlay-content .inner-content .icon {
+    padding-top: 102px;
+}    
+.single-service-style2 .overlay-content .inner-content .text-holder .title {
+    padding-left: 20px;
+}
+
+/*** Fact Counter Area Css ***/   
+.single-fact-counter {
+    max-width: 250px;
+    margin: 0 auto 50px;
+}
+ 
+/*** Latest Portfolio Area Css ***/       
+.latest-portfolio-area {
+    padding: 65px 0 120px;
+}    
+    
+/*** Testimonial Style1 Area Css ***/ 
+.testimonial-style1-title-box {
+    padding-top: 120px;
+    padding-bottom: 205px;
+}    
+.testimonial-style1-title-box:before {
+    left: -10000px;
+    right: -10000px;
+}    
+.single-vertical-carousel {
+    margin-left: 0;
+    margin-top: 40px;
+} 
+.single-vertical-carousel .prev-btn {
+    top: -215px;
+    left: 0px;
+}    
+.single-vertical-carousel .next-btn {
+    top: -215px;
+    left: 70px;
+}   
+
+/*** Footer Area Css ***/     
+.single-footer-widget .our-company-info .footer-social-links  .social-links-style1 li {
+    margin-right: 10px;
+}
+.single-footer-widget .our-company-info .footer-social-links  .social-links-style1 li:last-child {
+    margin-right: 0px;
+}    
+
+    
+    
+    
+    
+/*** Main Header Style2 Css ***/         
+.main-menu.style2 .navigation>li {
+    margin-right: 17px;
+}    
+.main-menu.style2 .navigation>li:last-child {
+    margin-right: 0px;
+}    
+.menu-right-content .outer-search-box-style1 {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+/*** About Style2 Area Css ***/           
+.about-style2-image-box img {
+    max-width: 100%;
+    width: 100%;
+    float: none;
+}    
+.about-style2-image-box .inner-box .image-box2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 1;
+}     
+.about-style1-text-box.style2 {
+    padding-top: 66px;
+    padding-left: 0;
+    padding-bottom: 62px;
+}    
+    
+/*** Faq Content Area Css ***/    
+.faq-content-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}    
+.faq-image-box {
+    position: static;
+    margin-top: 60px;
+}    
+
+/*** Slogan Area Css ***/       
+.slogan-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: auto;
+    padding: 30px 0 40px;
+}
+.slogan-content:before {
+    display: none;
+}    
+.slogan-content .title {
+    margin-bottom: 15px;
+}    
+
+    
+    
+    
+    
+/*** Main Header Style3 Css ***/ 
+.header-style3 {
+    background: rgba(255, 255, 255, 0.10);    
+}     
+.quote-button.style3 a {
+    padding: 0 15px;
+}    
+.menu-right-content .outer-search-box-style1.clr-white {
+    margin-left: 20px;
+    margin-right: 20px;
+}    
+
+/*** About Style1 Area Style3 Css ***/  
+.about-style1-area.style3 {
+    margin-top: 0px;
+    padding: 70px 0 120px;
+}
+.about-style3-image-box {
+    position: static;
+}    
+.about-style1-text-box.style3 {
+    padding-top: 60px;
+    padding-left: 0;
+}    
+.about-style1-text-box .title:before {
+    display: none;
+}    
+    
+/*** Latest Portfolio Style2 Area Css ***/      
+.single-portfolio-style2 .overlay-content .title-holder h3 {
+    font-size: 20px;
+    line-height: 32px;
+}    
+.single-portfolio-style2 .overlay-content .title-holder h3 br{
+    display: none;
+}    
+    
+/*** Latest Portfolio Style2 Area Css ***/ 
+.service-style1-area.style4 .title {
+    padding: 70px 0 70px;
+}    
+.service-style3-image-box {
+    position: static;
+}    
+    
+   
+    
+   
+    
+/*** Breadcrumb Area Css ***/ 
+.breadcrumb-area .title {
+    margin: 0 0 29px;
+}    
+.breadcrumb-area .title h1 {
+    font-size: 70px;
+    line-height: 80px;
+}        
+
+/*** Fact counter Area pdbottom120 Css ***/     
+.fact-counter-area.pdbottom120 {
+    padding-bottom: 66px;
+}        
+.fact-counter-area.pdtop120 {
+    padding-top: 0px;
+}    
+    
+/*** Service Imagegalley Area Css ***/      
+.top-single-service {
+    padding-bottom: 51px;
+    flex-direction: initial;
+}    
+.top-single-service .right {
+    top: 0;
+    max-width: 750px;
+    margin-top: 18px;
+}    
+.brochures-box {
+    margin-top: 35px;
+}    
+
+/*** Portfolio Pagev1 Css ***/        
+.portfolio-pagev1 {
+    padding-top: 120px;
+    padding-bottom: 0;
+}    
+
+/*** Portfolio Single Style1 Area Css ***/
+.single-portfolio-slider .slider-pager .thumb-box {
+    margin-top: 0px;
+    margin-bottom: 0;
+}    
+.single-portfolio-slider .slider-pager .thumb-box li {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto 0;
+}    
+.project-info-box {
+    margin-top: 31px;
+} 
+
+/*** Related Portfolio Css ***/    
+.related-portfolio {
+    padding: 120px 0 120px;
+}    
+   
+/*** Portfolio Single Style2 Area Css ***/    
+.inner-comment-box .single-comment-box.marlft100 {
+    margin-left: 0px;
+}    
+
+/*** Team Single Area Css ***/        
+.team-member-info-box {
+    padding-left: 0;
+    padding-top: 40px;
+}    
+
+/*** Faq content Area Faq Page Css ***/       
+.faq-content-area.faq-page {
+    padding-top: 120px;
+    padding-bottom: 112px;
+}    
+
+/*** Blog Single Area Css ***/        
+.inner-comment-box .single-comment-box .text-holder:before {
+    left: -70px;
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+}
+
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 
+/*** Main Header Css ***/        
+.header-upper {
+    padding: 30px 0 28px;
+}    
+.header-upper-left {
+    float: none !important;
+}    
+.header-upper-left .logo {
+    padding: 0px;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 25px;
+}
+.header-upper-right {
+    float: none !important;
+}
+.header-contact-info ul li {
+    margin-right: 30px;
+} 
+    
+/*** Main Slider Css ***/   
+.main-slider.style1 {
+    margin-top: 392px;
+}        
+.main-slider .auto-container {
+    padding: 0px 50px;
+}
+  
+/*** Service Style1 Area Css ***/        
+.single-service-style1 {
+    margin: 0 auto 60px;
+}    
+    
+/*** About Style1 Area Css ***/
+.about-style1-area .shape {
+    left: -100px;
+    bottom: 25px;
+}    
+.about-style1-image-box {
+    max-width: 670px;
+}    
+.about-style1-text-box {
+    padding-left: 0px;
+    padding-top: 60px;
+}    
+        
+/*** Service Style2 Area Css ***/    
+.single-service-style2 {
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto 30px;
+}    
+.single-service-style2 .overlay-content .inner-content .icon {
+    padding-top: 232px;
+}    
+    
+/*** Fact Counter Area Css ***/   
+.single-fact-counter {
+    max-width: 250px;
+    margin: 0 auto 50px;
+}
+        
+/*** Latest Portfolio Area Css ***/       
+.latest-portfolio-area {
+    padding: 65px 0 120px;
+}    
+    
+/*** Testimonial Style1 Area Css ***/ 
+.testimonial-style1-title-box {
+    padding-top: 120px;
+    padding-bottom: 205px;
+}    
+.testimonial-style1-title-box:before {
+    left: -10000px;
+    right: -10000px;
+}    
+.single-vertical-carousel {
+    margin-left: 0;
+    margin-top: 40px;
+} 
+.single-vertical-carousel .prev-btn {
+    top: -215px;
+    left: 0px;
+}    
+.single-vertical-carousel .next-btn {
+    top: -215px;
+    left: 70px;
+}   
+
+/*** Partner Area Css ***/    
+.single-partner-logo-box {
+    flex: 0 0 50%;
+    max-width: 50%;
+}    
+        
+/*** Footer Area Css ***/      
+.single-footer-widget.margin50-0{
+    margin: 50px 0;
+}    
+
+    
+    
+ 
+ 
+/*** Main Header Style2 Css ***/
+.header-upper-style2 {
+    position: relative;
+    display: block;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 0;
+}    
+.header-upper-left-style2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    float: none !important;
+    z-index: 100;
+}
+.header-upper-left-style2 .logo {
+    position: relative;
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 20px 0;
+    border: none;
+}
+.header-upper-right-style2 {
+    position: relative;
+    display: block;
+    float: none !important;
+}
+.header-upper-right-style2 .nav-outer {
+    position: relative;
+    display: block;
+    float: none;
+} 
+.menu-right-content {
+    position: absolute;
+    float: none;
+    top: 0;
+    right: 70px;
+    z-index: 100;
+}    
+.menu-right-content .outer-search-box-style1 {
+    position: static;
+    padding: 30px 0;
+    margin-left: 0px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.quote-button.style2 {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 5px 0;
+    margin: 0;
+}    
+    
+/*** Main Slider Style2 Css ***/    
+.main-slider.style2 {
+    margin-top: 129px;
+}    
+.main-slider.style2 .slide {
+    padding: 242px 0px 160px;
+}    
+    
+/*** About Style2 Area Css ***/           
+.about-style2-image-box img {
+    max-width: 100%;
+    width: 100%;
+    float: none;
+}    
+.about-style2-image-box .inner-box .image-box2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 1;
+}     
+.about-style1-text-box.style2 {
+    padding-top: 66px;
+    padding-left: 0;
+    padding-bottom: 62px;
+}    
+        
+/*** Faq Content Area Css ***/    
+.faq-content-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}    
+.faq-image-box {
+    position: static;
+    margin-top: 60px;
+}    
+        
+/*** Slogan Area Css ***/       
+.slogan-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: auto;
+    padding: 30px 0 40px;
+}
+.slogan-content:before {
+    display: none;
+}    
+.slogan-content .title {
+    margin-bottom: 15px;
+}    
+
+    
+        
+    
+    
+/*** Main Header Style3 Css ***/ 
+.header-style3 {
+    background: rgba(255, 255, 255, 0.10);    
+}      
+.quote-button.style3 a {
+    color: #ffffff;
+    background: #fd5d14;
+    line-height: 90px;
+    padding: 0 30px;
+}  
+.menu-right-content .outer-search-box-style1.clr-white {
+    margin-left: 0px;
+    margin-right: 0px;
+}    
+.quote-button.style3 {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 210px;
+    margin: 0;
+}    
+
+/*** Main Slider Style3 Css ***/     
+.main-slider.style3 .slide {
+    padding: 232px 0px 400px;
+}        
+    
+/*** About Style1 Area Style3 Css ***/  
+.about-style1-area.style3 {
+    margin-top: 0px;
+    padding: 70px 0 120px;
+}
+.about-style3-image-box {
+    position: static;
+}    
+.about-style1-text-box.style3 {
+    padding-top: 60px;
+    padding-left: 0;
+}    
+.about-style1-text-box .title:before {
+    display: none;
+}    
+    
+/*** Video Gallery Style2 Area Css ***/  
+.video-galler-outer-bg .title-holder h2 {
+    font-size: 34px;
+    line-height: 46px;
+}    
+    
+/*** Latest Portfolio Style2 Area Css ***/      
+.single-portfolio-style2 .overlay-content .title-holder h3 {
+    font-size: 20px;
+    line-height: 32px;
+}    
+.single-portfolio-style2 .overlay-content .title-holder h3 br{
+    display: none;
+}       
+    
+/*** Latest Portfolio Style2 Area Css ***/ 
+.service-style1-area.style4 .title {
+    padding: 70px 0 70px;
+}    
+.service-style3-image-box {
+    position: static;
+}
+    
+    
+    
+/*** Breadcrumb Area Css ***/ 
+.breadcrumb-area {
+    padding: 155px 0 113px;
+    margin-top: 392px;
+}  
+.breadcrumb-area .title {
+    margin: 0 0 18px;
+}    
+.breadcrumb-area .title h1 {
+    font-size: 70px;
+    line-height: 80px;
+}        
+    
+/*** Fact counter Area pdbottom120 Css ***/     
+.fact-counter-area.pdbottom120 {
+    padding-bottom: 66px;
+}        
+.fact-counter-area.pdtop120 {
+    padding-top: 0px;
+}        
+    
+/*** Service Imagegalley Area Css ***/      
+.top-single-service {
+    padding-bottom: 51px;
+    flex-direction: initial;
+}    
+.top-single-service .right {
+    top: 0;
+    max-width: 750px;
+    margin-top: 18px;
+}    
+.brochures-box {
+    margin-top: 35px;
+}    
+       
+/*** Portfolio Pagev1 Css ***/        
+.portfolio-pagev1 {
+    padding-top: 120px;
+    padding-bottom: 0;
+}        
+    
+/*** Portfolio Single Style1 Area Css ***/
+.single-portfolio-slider .slider-pager .thumb-box {
+    margin-top: 0px;
+    margin-bottom: 0;
+}    
+.single-portfolio-slider .slider-pager .thumb-box li {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto 0;
+}    
+.project-info-box {
+    margin-top: 31px;
+} 
+
+/*** Related Portfolio Css ***/    
+.related-portfolio {
+    padding: 120px 0 120px;
+}    
+   
+/*** Portfolio Single Style2 Area Css ***/    
+.inner-comment-box .single-comment-box.marlft100 {
+    margin-left: 0px;
+}            
+.portfolio-details-content-box {
+    padding: 0 0px;
+    margin-top: 3px;
+}    
+    
+/*** Team Single Area Css ***/        
+.team-member-info-box {
+    padding-left: 0;
+    padding-top: 40px;
+}    
+        
+/*** Faq content Area Faq Page Css ***/       
+.faq-content-area.faq-page {
+    padding-top: 120px;
+    padding-bottom: 112px;
+}    
+        
+/*** Blog Pagev2 Area Css ***/      
+.sidebar-wrapper {
+    margin-top: 50px;
+}    
+
+/*** Contact Form Area Css ***/       
+.contact-information-box {
+    padding-left: 0;
+    margin-top: 50px;
+}    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+ 
+    
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    
+.sec-title {
+    padding-bottom: 46px;
+}    
+.sec-title p br{
+    display: none;
+} 
+.sec-title .big-title {
+    padding: 19px 0 0;
+}    
+.sec-title .big-title h1 {
+    font-size: 40px;
+    line-height: 50px;
+}  
+.sec-title .big-title h1 br{
+    display: none;
+}   
+   
+    
+/*** Main Header Css ***/
+.header-upper {
+    padding: 30px 0;
+}    
+.header-upper-left {
+    float: none !important;
+}    
+.header-upper-left .logo {
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+}  
+.header-contact-info {
+    display: none;
+}    
+.outer-search-box-style1 {
+    display: none;
+}    
+    
+/*** Main Slider Css ***/   
+.main-slider.style1 {
+    margin-top: 284px;
+}
+.main-slider .auto-container {
+    padding: 0px 30px;
+}    
+.main-slider .content h2 {
+    font-size: 42px;
+    line-height: 1.0em;
+    margin-bottom: 36px;
+}    
+.main-slider .content h3 {
+    font-size: 18px;
+    line-height: 1.0em;
+}
+.main-slider .content h3:before {
+    left: 35px;
+    bottom: 6px;
+    right: 35px;
+    height: 3px;
+}    
+.main-slider .content h3 img {
+    padding-right: 10px;
+}  
+.main-slider .content .text {
+    margin-top: 23px;
+    margin-bottom: 40px;
+    max-width: 400px;
+}    
+.main-slider .content .btns-box {
+    max-width: 270px;
+    width: 100%;
+}  
+.main-slider .content .btns-box .btn-one {
+    margin-left: 0;
+    margin-top: 10px;
+} 
+.main-slider .owl-theme .owl-dots {
+    right: 20px;
+} 
+    
+/*** Service Style1 Area Css ***/ 
+.service-style1-area .title h1 br{
+    display: none;
+}    
+.single-service-style1 {
+    margin: 0 auto 60px;
+}    
+       
+/*** About Style1 Area Css ***/
+.about-style1-area .shape {
+    left: -170px;
+    bottom: 60px;
+}  
+.about-style1-image-box {
+    max-width: 320px;
+    margin: 0 auto;
+} 
+.about-style1-image-box .image-box1 {
+    width: 300px;
+}    
+.about-style1-text-box {
+    padding-left: 0px;
+    padding-top: 60px;
+}    
+.about-style1-text-box .title:before {
+    display: none;
+} 
+.about-style1-text-box .title h1 {
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: 600;
+    margin: 17px 0 0;
+}    
+.about-style1-text-box .title h1 br{
+    display: none;
+}    
+
+/*** Service Style2 Area Css ***/    
+.single-service-style2 {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto 30px;
+} 
+.single-service-style2 .img-holder .static-content {
+    padding-left: 15px;
+}  
+.single-service-style2 .img-holder .static-content .title {
+    padding-left: 20px;
+}
+.single-service-style2 .img-holder .static-content .title h3 {
+    font-size: 15px;
+}       
+.single-service-style2 .img-holder .static-content .icon a {
+    width: 60px;
+    font-size: 30px;
+} 
+.single-service-style2 .overlay-content .inner-content .text-holder {
+    padding: 0px 20px 41px;
+}    
+.single-service-style2 .overlay-content .inner-content .icon {
+    padding-top: 102px;
+}     
+.single-service-style2 .overlay-content .inner-content .text-holder .title {
+    padding-left: 20px;
+}    
+    
+/*** Fact Counter Area Css ***/   
+.single-fact-counter {
+    max-width: 250px;
+    margin: 0 auto 50px;
+}
+    
+/*** Latest Portfolio Area Css ***/       
+.latest-portfolio-area {
+    padding: 65px 0 120px;
+} 
+.project-filter {
+    padding: 21px 0 2px;
+}    
+.project-filter li {
+    margin: 0 15px 20px;
+}        
+    
+/*** Testimonial Style1 Area Css ***/ 
+.testimonial-style1-title-box {
+    padding-top: 120px;
+    padding-bottom: 205px;
+}    
+.testimonial-style1-title-box:before {
+    left: -10000px;
+    right: -10000px;
+}  
+.testimonial-style1-title-box .sec-title .big-title h1 {
+    font-size: 50px;
+    line-height: 62px;
+}    
+.single-vertical-carousel {
+    margin-left: 0;
+    margin-top: 40px;
+} 
+.single-vertical-carousel .prev-btn {
+    top: -215px;
+    left: 0px;
+}    
+.single-vertical-carousel .next-btn {
+    top: -215px;
+    left: 70px;
+}   
+
+/*** Partner Area Css ***/    
+.single-partner-logo-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}   
+        
+/*** Footer Area Css ***/      
+.single-footer-widget.margin50-0{
+    margin: 50px 0;
+}    
+.footer-bottom .outer-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}        
+.copyright-text {
+    padding: 20px 0;
+    padding-right: 0px;
+    width: 100%;
+}
+.footer-menu {
+    padding: 24px 0 26px;
+}    
+    
+    
+    
+    
+    
+/*** Main Header Style2 Css ***/
+.header-upper-style2 {
+    position: relative;
+    display: block;
+    background: rgba(255, 255, 255, 0.40);
+    padding: 0;
+}    
+.header-upper-left-style2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    float: none !important;
+    z-index: 100;
+}
+.header-upper-left-style2 .logo {
+    position: relative;
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 20px 0;
+    border: none;
+}
+.header-upper-right-style2 {
+    position: relative;
+    display: block;
+    float: none !important;
+}
+.header-upper-right-style2 .nav-outer {
+    position: relative;
+    display: block;
+    float: none;
+} 
+.menu-right-content {
+    position: absolute;
+    float: none;
+    top: 0;
+    right: 70px;
+    z-index: 100;
+    display: none;
+}    
+.menu-right-content .outer-search-box-style1 {
+    position: static;
+    padding: 30px 0;
+    margin-left: 0px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.quote-button.style2 {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 5px 0;
+    margin: 0;
+}    
+    
+/*** Main Slider Style2 Css ***/    
+.main-slider.style2 {
+    margin-top: 129px;
+}    
+.main-slider.style2 .slide {
+    padding: 246px 0px 160px;
+}            
+   
+/*** About Style2 Area Css ***/
+.about-style2-area {
+    padding-top: 120px;
+}    
+.about-style2-image-box img {
+    max-width: 100%;
+    width: 100%;
+    float: none;
+}  
+.about-style2-image-box .inner-box {
+    position: static;
+}  
+.about-style2-image-box .inner-box .image-box1 {
+    position: relative;
+    display: block;
+}  
+.about-style2-image-box .inner-box .image-box1:before {
+    display: none;
+}
+.about-style2-image-box .inner-box .image-box1:after {
+    display: none;
+}    
+.about-style2-image-box .inner-box .image-box2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}     
+.about-style1-text-box.style2 {
+    padding-top: 66px;
+    padding-left: 0;
+    padding-bottom: 63px;
+}    
+        
+/*** Service Style3 Area Css ***/
+.service-style3-area .sec-title {
+    padding-bottom: 154px;
+    text-align: center;
+}    
+.service-carousel.owl-nav-style-one.owl-theme .owl-nav {
+    top: -120px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}    
+.single-service-style3 .overlay-content .title-holder h3 {
+    font-size: 20px;
+    line-height: 32px;
+}    
+.single-service-style3 .overlay-content .title-holder h3 br{
+    display: none;
+}    
+ 
+/*** Testimonial Style2 Area Css ***/    
+.testimonial-carousel {
+    padding: 0 10px;
+}    
+.owl-carousel.owl-dot-style1 .owl-dots .owl-dot {
+    margin: 0px 5px 5px;
+}    
+
+/*** Faq Content Area Css ***/    
+.faq-content-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}    
+.faq-image-box {
+    position: static;
+    margin-top: 60px;
+}    
+        
+/*** Slogan Area Css ***/       
+.slogan-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: auto;
+    padding: 30px 0 40px;
+}
+.slogan-content:before {
+    display: none;
+}    
+.slogan-content .title {
+    margin-bottom: 15px;
+}    
+    
+        
+
+
+    
+/*** Main Header Style3 Css ***/    
+.header-style3 {
+    background: rgba(255, 255, 255, 0.10);    
+}      
+/*** Main Slider Style3 Css ***/     
+.main-slider.style3 .slide {
+    padding: 232px 0px 400px;
+}        
+.main-slider.style3 .content .btns-box {
+    margin-top: 42px;
+}        
+.main-slider.style3 .video-holder-box-style4 {
+    bottom: 300px;
+}    
+    
+/*** About Style1 Area Style3 Css ***/  
+.about-style1-area.style3 {
+    margin-top: 0px;
+    padding: 70px 0 120px;
+}
+.about-style3-image-box {
+    position: static;
+}    
+.about-style1-text-box.style3 {
+    padding-top: 60px;
+    padding-left: 0;
+}    
+.about-style1-text-box .title:before {
+    display: none;
+}    
+    
+/*** Video Gallery Style2 Area Css ***/
+.video-galler-outer-bg .title-holder {
+    max-width: 300px;
+    width: 100%;
+    margin: -9px auto 0;
+}    
+.video-galler-outer-bg .title-holder h2 {
+    font-size: 24px;
+    line-height: 36px;
+}    
+.video-galler-outer-bg .title-holder h2 br{
+    display: none;
+}            
+
+/*** Latest Portfolio Style2 Area Css ***/ 
+.latest-portfolio-style2-area .sec-title {
+    padding-bottom: 154px;
+    text-align: center;
+}    
+.single-portfolio-style2 .overlay-content .title-holder h3 {
+    font-size: 20px;
+    line-height: 32px;
+}    
+.single-portfolio-style2 .overlay-content .title-holder h3 br{
+    display: none;
+}       
+.portfolio-carousel.owl-nav-style-one.owl-theme .owl-nav {
+    position: absolute;
+    top: -120px;
+    text-align: center;
+}    
+    
+/*** Latest Portfolio Style2 Area Css ***/ 
+.service-style1-area.style4 .title {
+    padding: 70px 0 70px;
+}    
+.service-style3-image-box {
+    position: static;
+}
+    
+    
+    
+    
+    
+/*** Breadcrumb Area Css ***/ 
+.breadcrumb-area {
+    padding: 155px 0 113px;
+    margin-top: 284px;
+}
+.breadcrumb-area .title {
+    margin: 0 0 21px;
+}    
+.breadcrumb-area .title h1 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+}      
+        
+/*** Fact counter Area pdbottom120 Css ***/     
+.fact-counter-area.pdbottom120 {
+    padding-bottom: 66px;
+}        
+.fact-counter-area.pdtop120 {
+    padding-top: 0px;
+}        
+    
+/*** Service Imagegalley Area Css ***/      
+.top-single-service {
+    padding-bottom: 51px;
+    flex-direction: initial;
+}  
+.top-single-service .left {
+    padding-left: 0;
+} 
+.top-single-service .left .icon {
+    position: static;
+    top: 0;
+    margin-bottom: 20px;
+}  
+.top-single-service .left h2 br {
+    display: none;
+}    
+.top-single-service .right {
+    top: 0;
+    max-width: 750px;
+    margin-top: 18px;
+}  
+.single-service-text-box {
+    padding: 41px 30px 0;
+}      
+.brochures-box {
+    margin-top: 35px;
+}    
+   
+/*** Portfolio Pagev1 Css ***/        
+.portfolio-pagev1 {
+    padding-top: 120px;
+    padding-bottom: 0;
+}        
+ 
+/*** Portfolio Pagev2 Css ***/ 
+.portfolio-pagev2 {
+    padding-top: 106px;
+    padding-bottom: 0;
+}    
+.portfolio-pagev2 .top-box {
+    padding-bottom: 70px;
+    display: block;
+}    
+.portfolio-pagev2 .top-box .styled-pagination {
+    margin: 38px 0 0;
+}    
+    
+/*** Portfolio Single Style1 Area Css ***/
+.single-portfolio-slider .slider-pager .thumb-box {
+    margin-top: 0px;
+    margin-bottom: 0;
+}    
+.single-portfolio-slider .slider-pager .thumb-box li {
+    max-width: 300px;
+    width: 100%;
+    margin: 20px auto 0;
+}    
+.project-info-box {
+    margin-top: 31px;
+} 
+
+/*** Related Portfolio Css ***/    
+.related-portfolio {
+    padding: 120px 0 120px;
+}    
+   
+/*** Portfolio Single Style2 Area Css ***/ 
+.inner-comment-box .single-comment-box {
+    min-height: 178px;
+    padding-left: 0px;
+    margin-bottom: 50px;
+}   
+.inner-comment-box .single-comment-box .img-holder {
+    position: static;
+    width: 80px;
+    height: 80px;
+}    
+.inner-comment-box .single-comment-box.marlft100 {
+    margin-left: 0px;
+}
+.inner-comment-box .single-comment-box .text-holder {
+    padding: 28px 0 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}    
+.inner-comment-box .single-comment-box .text-holder:before {
+    display: none;
+}    
+.portfolio-details-content-box {
+    padding: 0 0px;
+    margin-top: 3px;
+}    
+.project-info-box.style2 {
+    padding: 46px 30px 26px;
+    padding-right: 30px;
+}            
+    
+/*** Team Single Area Css ***/        
+.team-member-info-box {
+    padding-left: 0;
+    padding-top: 40px;
+}  
+
+/*** Testimonial Page Area Css ***/          
+.testimonial-page-box {
+    padding: 0 0px;
+}    
+        
+/*** Faq content Area Faq Page Css ***/       
+.faq-content-area.faq-page {
+    padding-top: 120px;
+    padding-bottom: 112px;
+}    
+             
+/*** Blog Pagev2 Area Css ***/      
+.sidebar-wrapper {
+    margin-top: 50px;
+} 
+.blog-single-area .sidebar-wrapper {
+    margin-top: 100px;
+}   
+.single-blog-post-style3.withbdr {
+    margin-bottom: 50px;
+    border: 0px solid #fd5d14;
+    padding: 0 0px 0px;
+}    
+.single-blog-post-style3 .quote-box {
+    min-height: 130px;
+    padding-top: 5px;
+}    
+.single-blog-post-style3 .audio-gallery {
+    display: block;
+}    
+.single-blog-post-style3 .audio-gallery .audio-content {
+    padding-left: 0;
+    margin-top: 20px;
+}    
+.blog-single-quote-box h2 {
+    font-size: 20px;
+    line-height: 32px;
+}       
+
+/*** Contact Form Area Css ***/       
+.contact-information-box {
+    padding-left: 0;
+    margin-top: 50px;
+}    
+    
+/*** google map Area Css ***/     
+.google-map-area .map-outer .map-canvas {
+    height: 480px;
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+}
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+span.hometext {
+    display: none;
+}
+span.homeicon{
+    display: block;
+}
+    
+    
+
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+span.hometext {
+    display: block;
+}
+span.homeicon{
+    display: none;
+}        
+    
+    
+.header-top {
+    padding: 16px 0;
+}    
+.header-top-left {
+    max-width: 100%;
+    text-align: center;
+}
+.header-top-middle {
+    max-width: 100%;
+    text-align: center;
+    padding: 9px 0 3px;
+}  
+.header-top-right {
+    max-width: 100%;
+    text-align: center;
+}
+.header-menu {
+    float: none;
+}    
+.header-menu ul li {
+    float: none;
+    padding-right: 11px;
+    margin-right: 10px;
+}
+     
+ 
+.header-lawer .outer-box {
+    background: #030e27;
+    padding: 0 15px;
+}    
+.header-lawer-left {
+    float: none !important;
+}    
+.header-lawer-right {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: block;
+    float: none !important;
+    z-index: 100;
+}  
+.outer-search-box-style1 {
+    position: absolute;
+    top: 0;
+    left: 260px;
+    float: none;
+    padding: 30px 0;
+    margin-right: 0;
+}
+.quote-button {
+    float: none;
+    margin: 5px 0;
+}    
+    
+    
+    
+    
+    
+.main-header .main-menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: none;
+}   
+.main-menu .navbar-header {
+    position: relative;
+    display: block;
+    float: none;
+    text-align: right;
+    width: 100%;
+    top: 0px;
+    z-index: 12;
+}    
+.main-menu .navbar-header .navbar-toggle {
+    display: inline-block;
+    z-index: 7;
+    float: none;
+    padding: 4px 5px;
+    cursor: pointer;
+    margin: 24px 0;
+    border-radius: 0px;
+    background: #fd5d14;
+}
+.main-menu .navbar-header .navbar-toggle .icon-bar {
+    background: #ffffff;
+    height: 2px;
+    width: 29px;
+    display: block;
+    margin: 7px 5px;
+}
+.main-menu .collapse {
+    max-height: 350px;
+    max-width: none;
+    overflow: auto;
+    float: none;
+    width: 100%;
+    padding: 0px 0px 0px;
+    border: none;
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.main-menu .navbar-collapse {
+    max-height: 350px; 
+}    
+.main-menu .navbar-collapse>.navigation {
+    float: none !important;
+    margin: 0px !important;
+    width: 100% !important;
+    background: #020a1c;
+    border: 0px solid #ffffff;
+    border-top: none;
+}   
+.main-menu .navbar-collapse>.navigation>li {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0px !important;
+    float: none !important;
+}
+.main-menu .navbar-collapse>.navigation>li,
+.main-menu .navbar-collapse>.navigation>li>ul>li,
+.main-menu .navbar-collapse>.navigation>li>ul>li>ul>li {
+    border-top: 1px solid #04102a !important;
+    opacity: 1 !important;
+    top: 0px !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    left: 0px !important;
+    visibility: visible !important;
+    border-bottom: none;
+    padding: 0 !important;
+}
+.main-menu .navbar-collapse>.navigation>li:first-child {
+    border: none;
+}    
+.main-menu .navbar-collapse>.navigation>li>a,
+.main-menu .navbar-collapse>.navigation>li>ul>li>a,
+.main-menu .navbar-collapse>.navigation>li>ul>li>ul>li>a {
+    padding: 10px 20px 8px !important;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: left;
+    min-height: 0px;
+    border-bottom: 0px solid;
+}  
+.main-menu .navbar-collapse>.navigation>li>a{
+    font-size: 16px;
+}  
+.main-menu .navbar-collapse>.navigation>li>ul>li>a {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+} 
+.main-menu .navbar-collapse>.navigation>li>ul>li>ul>li>a{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+}    
+.main-menu .navbar-collapse>.navigation>li:hover>a,
+.main-menu .navbar-collapse>.navigation>li>ul>li:hover>a,
+.main-menu .navbar-collapse>.navigation>li>ul>li>ul>li:hover>a,
+.main-menu .navbar-collapse>.navigation>li.current>a,
+.main-menu .navbar-collapse>.navigation>li.current-menu-item>a {
+    color: #fd5d14 !important;
+}
+.main-menu .navbar-collapse>.navigation>li:hover> a.homeicon{
+    color: #ffffff !important;
+} 
+.main-menu .navbar-collapse>.navigation>li.current>a.homeicon{
+    color: #ffffff !important;
+}    
+    
+    
+.main-menu .navbar-collapse>.navigation>li>ul,
+.main-menu .navbar-collapse>.navigation>li>ul>li>ul {
+    position: relative;
+    border: none;
+    float: none;
+    visibility: visible;
+    opacity: 1;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    width: 100%;
+    background: #020818;
+    -webkit-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    -moz-transition: none !important;
+    box-shadow: none !important;
+} 
+.main-menu .navbar-collapse>.navigation>li>ul:before,
+.main-menu .navbar-collapse>.navigation>li>ul>li>ul:before{   
+    display: none;
+}      
+.main-menu .navbar-collapse>.navigation li.dropdown .dropdown-btn {
+    display: block;
+}    
+    
+    
+.fixed-header .sticky-header {
+    display: none!important;
+}      
+.main-menu .navigation> li.dropdown> a:before {
+    display: none;
+}    
+.main-menu .navigation> li> ul> li> a:before {
+    display: none;
+}  
+.main-menu .navigation>li>ul>li>ul>li a:before {
+    display: none;
+} 
+ 
+    
+    
+
+
+ 
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+@media only screen and (max-width: 1550px) {
+    
+.video-holder-box-style4 {
+    left: auto;
+    right: 0px;
+    bottom: 142px;
+}    
+    
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) { 
+    
+.single-service-style3 .overlay-content .title-holder h3 {
+    font-size: 20px;
+    line-height: 32px;
+}    
+    
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) {    
+.single-service-style3 .overlay-content .title-holder h3 {
+    font-size: 18px;
+    line-height: 26px;
+}  
+.single-service-style3 .overlay-content .title-holder h3 br{
+    display: none;
+}    
+    
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {    
+.single-service-style3 .overlay-content .title-holder h3 {
+    font-size: 18px;
+    line-height: 26px;
+}  
+.single-service-style3 .overlay-content .title-holder h3 br{
+    display: none;
+}    
+    
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1700px) {    
+ 
+.about-style1-area.style3 {
+    margin-top: 0;
+    padding: 120px 0 80px;
+}    
+.about-style3-image-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 750px;
+}    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
