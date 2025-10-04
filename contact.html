@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | 王子建設不動産</title>
+    <style>
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        /* Header styles from index.html */
+        header {
+            background: #fff;
+            padding: 1rem 5%;
+            border-bottom: 2px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .header-contact-info {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+            color: #555;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            position: relative;
+        }
+        .info-item .icon {
+            margin-right: 5px;
+            font-size: 1.1rem;
+            color: #f39c12;
+        }
+        .info-item .text-wrap {
+            display: flex;
+            flex-direction: column;
+        }
+        .info-item p {
+            margin: 0;
+            padding: 0;
+        }
+        .info-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .header-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+            flex-wrap: wrap;
+        }
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Page-specific styles */
+        .contact-page-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            flex-wrap: wrap;
+        }
+        .contact-info-section {
+            flex: 1;
+            padding: 40px;
+            background: #2c3e50;
+            color: white;
+        }
+        .contact-info-section h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 10px;
+        }
+        .contact-info-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info-section li {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .contact-info-section .icon {
+            margin-right: 15px;
+            font-size: 1.5rem;
+            color: #f39c12;
+            flex-shrink: 0;
+        }
+        .contact-info-section .text-block p {
+            margin: 0;
+            padding: 0;
+        }
+        .contact-form-section {
+            flex: 2;
+            padding: 40px;
+        }
+        .contact-form-section h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-button:hover {
+            background-color: #2980b9;
+        }
+        /* Footer styles */
+        .company-info {
+            background: #444;
+            padding: 30px 5%;
+            color: #fff;
+            text-align: left;
+        }
+        .company-info p {
+            margin: 5px 0;
+        }
+        .company-info h3 {
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+        .footer-grid {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        .footer-grid-item {
+            flex-grow: 1;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 5%;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .contact-page-container {
+                flex-direction: column;
+                margin: 20px;
+            }
+            .contact-info-section, .contact-form-section {
+                padding: 30px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <img src="logo.jpg" alt="王子建設不動産ロゴ">
+        </div>
+        <div class="header-contact-info">
+            <div class="info-item">
+                <span class="material-symbols-outlined icon">location_on</span>
+                <div class="text-wrap">
+                    <p>〒111-0052</p>
+                    <p>東京都台東区柳橋2-2-3 西田ビル 2F</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <span class="material-symbols-outlined icon">call</span>
+                <div class="text-wrap">
+                    <p><a href="javascript:void(0);" onclick="copyToClipboard('03-5829-3548')">03-5829-3548</a></p>
+                    <p><a href="javascript:void(0);" onclick="copyToClipboard('ijc.info1017@gmail.com')">ijc.info1017@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="info-item">
+                <span class="material-symbols-outlined icon">schedule</span>
+                <div class="text-wrap">
+                    <p>9:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <nav>
+            <a href="index.html">ホーム</a>
+            <a href="index.html#about">会社概要</a>
+            <a href="index.html#services">業務内容</a>
+            <a href="index.html#gallery">実績例ギャラリー</a>
+            <a href="#contact">お問合せ</a>
+        </nav>
+    </div>
+</header>
+
+<div class="contact-page-container">
+    <div class="contact-info-section">
+        <h2>イノベーション情報株式会社</h2>
+        <ul>
+            <li>
+                <span class="material-symbols-outlined icon">location_on</span>
+                <div class="text-block">
+                    <p>〒111-0052</p>
+                    <p>東京都台東区柳橋2-2-3 西田ビル 2F</p>
+                </div>
+            </li>
+            <li>
+                <span class="material-symbols-outlined icon">call</span>
+                <div class="text-block">
+                    <p>TEL 03-5829-3548</p>
+                    <p>FAX 03-5829-3481</p>
+                    <p>080-4432-8883</p>
+                </div>
+            </li>
+            <li>
+                <span class="material-symbols-outlined icon">mail</span>
+                <div class="text-block">
+                    <p>ijc.info1017@gmail.com(代表)</p>
+                    <p>ijc.watanabe@gmail.com</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="contact-form-section">
+        <h2>お問い合わせ</h2>
+        <form action="https://formspree.io/f/your_form_id" method="POST">
+            <div class="form-group">
+                <input type="text" name="お名前" placeholder="お名前" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="メールアドレス" placeholder="メールアドレス" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="お電話" placeholder="お電話">
+            </div>
+            <div class="form-group">
+                <textarea name="お問い合わせ内容" placeholder="お問い合わせ内容" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">送信する</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

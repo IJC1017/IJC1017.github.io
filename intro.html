@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会社概要 | 王子建設不動産</title>
+    <style>
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        /* Header styles */
+        header {
+            background: #fff;
+            padding: 1rem 5%;
+            border-bottom: 2px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .header-contact-info {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+            color: #555;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            position: relative;
+        }
+        .info-item .icon {
+            margin-right: 5px;
+            font-size: 1.1rem;
+            color: #f39c12;
+        }
+        .info-item .text-wrap {
+            display: flex;
+            flex-direction: column;
+        }
+        .info-item p {
+            margin: 0;
+            padding: 0;
+        }
+        .info-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .header-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+            flex-wrap: wrap;
+        }
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Page-specific styles */
+        .intro-page-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            flex-wrap: wrap;
+        }
+        .intro-info-section {
+            flex: 1;
+            padding: 40px;
+            background: #2c3e50;
+            color: white;
+        }
+        .intro-info-section h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 10px;
+        }
+        .intro-info-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .intro-info-section li {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .intro-info-section .icon {
+            margin-right: 15px;
+            font-size: 1.5rem;
+            color: #f39c12;
+            flex-shrink: 0;
+        }
+        .intro-info-section .text-block p {
+            margin: 0;
+            padding: 0;
+        }
+        .intro-content-section {
+            flex: 2;
+            padding: 40px;
+        }
+        .intro-content-section h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+        .intro-content-section .info-list {
+            list-style: none;
+            padding: 0;
+        }
+        .intro-content-section .info-list li {
+            margin-bottom: 15px;
+        }
+        .intro-content-section .info-list li strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+        .intro-content-section .info-list li p {
+            margin: 0;
+        }
+        .intro-content-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer styles */
+        .company-info {
+            background: #444;
+            padding: 30px 5%;
+            color: #fff;
+            text-align: left;
+        }
+        .company-info p {
+            margin: 5px 0;
+        }
+        .company-info h3 {
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+        .footer-grid {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        .footer-grid-item {
+            flex-grow: 1;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 5%;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .intro-page-container {
+                flex-direction: column;
+                margin: 20px;
+            }
+            .intro-info-section, .intro-content-section {
+                padding: 30px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <img src="./assists/images/logo.jpg" alt="王子建設不動産ロゴ">
+        </div>
+        <div class="header-contact-info">
+            <div class="info-item">
+                <span class="material-symbols-outlined icon">location_on</span>
+                <div class="text-wrap">
+                    <p>〒111-0052</p>
+                    <p>東京都台東区柳橋2-2-3 西田ビル 2F</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <span class="material-symbols-outlined icon">call</span>
+                <div class="text-wrap">
+                    <p><a href="javascript:void(0);" onclick="copyToClipboard('03-5829-3548')">03-5829-3548</a></p>
+                    <p><a href="javascript:void(0);" onclick="copyToClipboard('ijc.info1017@gmail.com')">ijc.info1017@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="info-item">
+                <span class="material-symbols-outlined icon">schedule</span>
+                <div class="text-wrap">
+                    <p>9:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <nav>
+            <a href="index.html">ホーム</a>
+            <a href="index.html#about">会社概要</a>
+            <a href="index.html#services">業務内容</a>
+            <a href="index.html#gallery">実績例ギャラリー</a>
+            <a href="contact.html">お問合せ</a>
+        </nav>
+    </div>
+</header>
+
+<div class="intro-page-container">
+    <div class="intro-info-section">
+        <h2>イノベーション情報株式会社</h2>
+        <ul>
+            <li>
+                <span class="material-symbols-outlined icon">apartment</span>
+                <div class="text-block">
+                    <p>会社名</p>
+                    <p>株式会社 王子建設不動産</p>
+                </div>
+            </li>
+            <li>
+                <span class="material-symbols-outlined icon">location_on</span>
+                <div class="text-block">
+                    <p>住所</p>
+                    <p>〒111-0052</p>
+                    <p>東京都台東区柳橋2-2-3 西田ビル 2F</p>
+                </div>
+            </li>
+            <li>
+                <span class="material-symbols-outlined icon">call</span>
+                <div class="text-block">
+                    <p>TEL 03-5829-3548</p>
+                    <p>FAX 03-5829-3481</p>
+                    <p>080-4432-8883</p>
+                </div>
+            </li>
+            <li>
+                <span class="material-symbols-outlined icon">mail</span>
+                <div class="text-block">
+                    <p>Email</p>
+                    <p>ijc.info1017@gmail.com(代表)</p>
+                    <p>ijc.watanabe@gmail.com</p>
+                </div>
+            </li>
+            <li>
+                <span class="material-symbols-outlined icon">schedule</span>
+                <div class="text-block">
+                    <p>営業時間</p>
+                    <p>9:00 - 18:00</p>
+                </div>
+            </li>
+            <li>
+                <span class="material-symbols-outlined icon">event_note</span>
+                <div class="text-block">
+                    <p>設立</p>
+                    <p>2013年5月1日</p>
+                </div>
+            </li>
+            <li>
+                <span class="material-symbols-outlined icon">person</span>
+                <div class="text-block">
+                    <p>代表取締役</p>
+                    <p>*****</p>
+                </div>
+            </li>
+            <li>
+                <span class="material-symbols-outlined icon">currency_yen</span>
+                <div class="text-block">
+                    <p>資本金</p>
+                    <p>*****万円</p>
+                </div>
+            </li>
+            <li>
+                <span class="material-symbols-outlined icon">business_center</span>
+                <div class="text-block">
+                    <p>事業内容</p>
+                    <p>内装業(クロス、床、ボード貼り等)、新築戸建て、マンションの内装、デザイン、設計</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="intro-content-section">
+        <img src="https://picsum.photos/800/600?random=1" alt="会社イメージ">
+        <h2>会社概要</h2>
+        <ul class="info-list">
+            <li>
+                <strong>会社名</strong>
+                <p>株式会社 王子建設不動産</p>
+            </li>
+            <li>
+                <strong>住所</strong>
+                <p>〒111-0052 東京都台東区柳橋2-2-3 西田ビル 2F</p>
+            </li>
+            <li>
+                <strong>TEL</strong>
+                <p>03-5829-3548</p>
+            </li>
+            <li>
+                <strong>FAX</strong>
+                <p>03-5829-3481</p>
+            </li>
+            <li>
+                <strong>Email</strong>
+                <p>ijc.info1017@gmail.com(代表)</p>
+                <p>ijc.watanabe@gmail.com</p>
+            </li>
+            <li>
+                <strong>設立</strong>
+                <p>2013年5月1日</p>
+            </li>
+            <li>
+                <strong>代表取締役</strong>
+                <p>****</p>
+            </li>
+            <li>
+                <strong>資本金</strong>
+                <p>****万円</p>
+            </li>
+            <li>
+                <strong>業務内容</strong>
+                <p>内装業(クロス、床、ボード貼り等)、新築戸建て、マンションの内装、デザイン、設計</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="company-info">
+    <h3>イノベーション情報株式会社</h3>
+    <div class="footer-grid">
+        <div class="footer-grid-item">
+            <p>〒111-0052</p>
+            <p>東京都台東区柳橋2-2-3 西田ビル 2F</p>
+        </div>
+        <div class="footer-grid-item">
+            <p>TEL 03-5829-3548</p>
+            <p>FAX 03-5829-3481</p>
+        </div>
+        <div class="footer-grid-item">
+            <p>ijc.info1017@gmail.com (代表)</p>
+            <p>ijc.watanabe@gmail.com</p>
+        </div>
+        <div class="footer-grid-item">
+            <p>080-4432-8883</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 王子建設不動産. All Rights Reserved.</p>
+</footer>
+<script>
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(function() {
+            alert('コピーしました: ' + text);
+        }).catch(function(err) {
+            console.error('コピーに失敗しました: ', err);
+        });
+    }
+</script>
+</body>
+</html>
