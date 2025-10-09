@@ -95,7 +95,6 @@
             transition: color 0.3s;
             font-size: 1.1rem;
         }
-        /* 添加分隔线 */
         nav a:not(:last-child)::after {
             content: '';
             position: absolute;
@@ -106,7 +105,6 @@
             width: 1px;
             background-color: #ccc;
         }
-        /* 悬停下划线动画 */
         nav a::before {
             content: '';
             position: absolute;
@@ -168,6 +166,11 @@
         }
         .hero h1 br {
             display: none;
+        }
+
+        /* Anchor link scroll offset correction */
+        #about, #dynamic-services, #department-intro, #company-info-anchor {
+            scroll-margin-top: 170px; /* MODIFIED: Increased offset */
         }
 
 
@@ -417,6 +420,71 @@
             background-image: var(--bg-url);
         }
 
+        /* --- Image Navigation Bar --- */
+        .image-nav-container {
+            display: flex;
+            width: 100%;
+            background-color: #fff;
+        }
+        .image-nav-item {
+            flex: 1;
+            position: relative;
+            height: 280px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+        }
+        .image-nav-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.4s ease, filter 0.4s ease;
+            z-index: 1;
+        }
+        .image-nav-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 2;
+            transition: background-color 0.4s ease;
+        }
+        .image-nav-item:hover .image-nav-bg {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+        .image-nav-item:hover::before {
+            background-color: rgba(41, 128, 185, 0.6);
+        }
+        .image-nav-text {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+        }
+        .image-nav-text .nav-text-main {
+            display: block;
+            font-size: 1.7rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .image-nav-text .nav-text-sub {
+            display: block;
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+
+
         /* 页脚 */
         .company-info {
             background: #444;
@@ -504,6 +572,10 @@
             }
         }
         @media (max-width: 768px) {
+            #about, #dynamic-services, #department-intro, #company-info-anchor {
+                scroll-margin-top: 90px; /* MODIFIED: Increased offset */
+            }
+
             .header-top {
                 flex-direction: row;
                 justify-content: space-between;
@@ -529,8 +601,15 @@
 
             .service-item {
                 height: auto;
-                min-height: 38.6vw; /* MODIFIED: (90vw width) * (9/21 ratio) */
+                min-height: 38.6vw;
                 max-height: 60vh;
+            }
+
+            .image-nav-container {
+                flex-direction: column;
+            }
+            .image-nav-item {
+                height: 200px;
             }
 
             .about-us-text p {
@@ -741,7 +820,39 @@
     </section>
 </div>
 
-<div class="company-info">
+<div class="image-nav-container">
+    <a href="#about" class="image-nav-item">
+        <div class="image-nav-bg" style="background-image: url('https://picsum.photos/800/600?random=30');"></div>
+        <div class="image-nav-text">
+            <span class="nav-text-main">COMPANY</span>
+            <span class="nav-text-sub">会社案内</span>
+        </div>
+    </a>
+    <a href="#dynamic-services" class="image-nav-item">
+        <div class="image-nav-bg" style="background-image: url('https://picsum.photos/800/600?random=31');"></div>
+        <div class="image-nav-text">
+            <span class="nav-text-main">SERVICE</span>
+            <span class="nav-text-sub">事業内容</span>
+        </div>
+    </a>
+    <a href="#company-info-anchor" class="image-nav-item">
+        <div class="image-nav-bg" style="background-image: url('https://picsum.photos/800/600?random=32');"></div>
+        <div class="image-nav-text">
+            <span class="nav-text-main">ACCESS</span>
+            <span class="nav-text-sub">アクセス</span>
+        </div>
+    </a>
+    <a href="contact.html" class="image-nav-item">
+        <div class="image-nav-bg" style="background-image: url('https://picsum.photos/800/600?random=33');"></div>
+        <div class="image-nav-text">
+            <span class="nav-text-main">CONTACT</span>
+            <span class="nav-text-sub">お問合せ</span>
+        </div>
+    </a>
+</div>
+
+
+<div id="company-info-anchor" class="company-info">
     <h3>イノベーション情報株式会社</h3>
     <div class="footer-grid">
         <div class="footer-grid-item">
