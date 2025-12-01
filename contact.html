@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="王子建設不動産のお問い合わせページです。不動産・建築などのことならイノベーション情報株式会社にお任せください。">
     <title>お問い合わせ | 王子建設不動産</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <style>
         body {
             font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
@@ -206,6 +208,13 @@
                 padding: 30px;
             }
         }
+
+        /* 冷却时的按钮样式 */
+        .submit-button:disabled, .submit-button.cooldown {
+            background-color: #95a5a6; /* 灰色 */
+            cursor: not-allowed;
+            color: #ecf0f1;
+        }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -213,7 +222,7 @@
 <header>
     <div class="header-top">
         <div class="logo">
-            <img src="logo.jpg" alt="王子建設不動産ロゴ">
+            <img src="./assists/images/logo.jpg" alt="王子建設不動産ロゴ">
         </div>
         <div class="header-contact-info">
             <div class="info-item">
@@ -241,10 +250,11 @@
     <div class="header-bottom">
         <nav>
             <a href="index.html">ホーム</a>
-            <a href="index.html#about">会社概要</a>
-            <a href="index.html#services">業務内容</a>
-            <a href="index.html#gallery">実績例ギャラリー</a>
-            <a href="#contact">お問合せ</a>
+            <a href="#about">会社概要</a>
+            <a href="#dynamic-services">事業内容</a>
+            <a href="#department-intro">事業紹介</a>
+            <a href="">採用情報</a>
+            <a>お問合せ</a>
         </nav>
     </div>
 </header>
@@ -279,23 +289,88 @@
     </div>
     <div class="contact-form-section">
         <h2>お問い合わせ</h2>
-        <form action="https://formspree.io/f/your_form_id" method="POST">
+        <form id="contact-form">
             <div class="form-group">
-                <input type="text" name="お名前" placeholder="お名前" required>
+                <input type="text" name="user_name" placeholder="お名前" required>
             </div>
             <div class="form-group">
-                <input type="email" name="メールアドレス" placeholder="メールアドレス" required>
+                <input type="email" name="user_email" placeholder="メールアドレス" required>
             </div>
             <div class="form-group">
-                <input type="tel" name="お電話" placeholder="お電話">
+                <input type="tel" name="user_phone" placeholder="お電話">
             </div>
             <div class="form-group">
-                <textarea name="お問い合わせ内容" placeholder="お問い合わせ内容" required></textarea>
+                <textarea name="message" placeholder="お問い合わせ内容" required></textarea>
             </div>
-            <button type="submit" class="submit-button">送信する</button>
+
+            <button type="submit" id="send-btn" class="submit-button">送信する</button>
         </form>
     </div>
 </div>
+<script>
+    emailjs.init("Du5s6wCOIH4_VBCD8");
+    // 监听表单提交
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // 阻止页面默认跳转刷新
 
+        const btn = document.getElementById('send-btn');
+        const originalText = btn.innerText;
+
+        // 防止重复点击
+        if (btn.disabled) return;
+
+        // 1. 改变按钮状态为“发送中”
+        btn.innerText = '送信中...';
+        btn.disabled = true;
+
+        // 2. 发送邮件 (Service ID 和 Template ID)
+        // https://dashboard.emailjs.com/admin
+        const serviceID = 'service_kt9avrg';
+        const templateID = 'template_d08oy78';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                // --- 发送成功 ---
+                alert('お問い合わせありがとうございます。送信されました！');
+
+                // 清空表单
+                document.getElementById('contact-form').reset();
+
+                // 3. 开始 30 秒冷却倒计时
+                let countdown = 30;
+                btn.classList.add('cooldown'); // 添加灰色样式
+
+                const timer = setInterval(() => {
+                    btn.innerText = `送信完了 (${countdown}秒後に再送信可)`;
+                    countdown--;
+
+                    if (countdown < 0) {
+                        clearInterval(timer);
+                        // 倒计时结束，恢复按钮
+                        btn.disabled = false;
+                        btn.classList.remove('cooldown');
+                        btn.innerText = originalText; // 恢复“送信する”
+                    }
+                }, 1000);
+
+            }, (err) => {
+                // --- 发送失败 ---
+                alert('送信に失敗しました。もう一度お試しください。\nError: ' + JSON.stringify(err));
+                // 恢复按钮让用户重试
+                btn.innerText = originalText;
+                btn.disabled = false;
+            });
+    });
+
+    // 复制到剪贴板的功能 (你Header里用到的)
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(function() {
+            alert(text + ' をコピーしました');
+        }, function(err) {
+            console.error('コピー失敗: ', err);
+        });
+    }
+</script>
 </body>
+
 </html>
