@@ -522,13 +522,83 @@
             font-size: 1.2rem;
             margin-top: 0;
         }
+        /* 页脚联系信息と著作権情報 (修改) */
+        .company-info {
+            background: #444;
+            padding: 30px 5%;
+            color: #fff;
+            /* 标题居中，内容左对齐 */
+            text-align: left;
+        }
+        .company-info h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            /* 保持标题左对齐 */
+            text-align: left;
+        }
+
+        /* 创建 2 列布局 */
         .footer-grid {
             display: flex;
-            gap: 30px;
-            justify-content: space-between;
+            max-width: 1000px; /* 限制宽度，使其不至于铺满超宽屏幕 */
+            margin: 0 auto; /* 居中整个网格容器 */
+            gap: 50px; /* 增加列间距 */
+            justify-content: space-between; /* 将两列推向两侧 */
+            text-align: left; /* 确保内容左对齐 */
         }
-        .footer-grid-item {
-            flex-grow: 1;
+
+        /* 新增：左侧列（电话、传真、邮箱、代表者） */
+        .footer-grid-item.contact-info {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        /* 新增：右侧列（地址、许可证、设立日、资本金） */
+        .footer-grid-item.address-details {
+            flex: 1;
+            min-width: 400px;
+        }
+
+        /* 修正 p 标签的样式以匹配图片排版 */
+        .company-info p {
+            margin: 5px 0;
+        }
+
+        /* 针对左上角标题的特殊处理，使其独立排布 */
+        .company-header-container {
+            max-width: 1000px;
+            margin: 0 auto 20px auto;
+        }
+
+        /* --- 响应式设计 (调整) --- */
+        @media (max-width: 1024px) {
+            /* ... (保持其他媒体查询不变) ... */
+            .footer-grid {
+                flex-direction: column;
+                gap: 20px;
+                padding-left: 5%; /* 添加一些左侧填充 */
+            }
+            .footer-grid-item {
+                min-width: auto;
+                max-width: none;
+                flex: none;
+            }
+        }
+        @media (max-width: 768px) {
+            /* ... (保持其他媒体查询不变) ... */
+            .company-info h3 {
+                text-align: center; /* 在手机上居中标题 */
+            }
+            .company-info {
+                text-align: center; /* 在手机上居中所有内容 */
+            }
+            .footer-grid-item.contact-info, .footer-grid-item.address-details {
+                text-align: center;
+            }
+            .footer-grid {
+                padding-left: 0;
+            }
         }
         footer {
             background: #2c3e50;
@@ -875,25 +945,25 @@
 </div>
 
 
-<div id="company-info-anchor" class="company-info">
-    <h3>イノベーション情報株式会社 (王子建設不動産)</h3>
+<div class="company-info">
+    <div class="company-header-container">
+        <h3>イノベーション情報株式会社 (王子建設不動産)</h3>
+    </div>
     <div class="footer-grid">
-        <div class="footer-grid-item">
-            <p>〒111-0052</p>
-            <p>東京都台東区柳橋2-2-3 西田ビル 2F</p>
-        </div>
-        <div class="footer-grid-item">
+        <div class="footer-grid-item contact-info">
             <p>TEL 03-5829-3548</p>
             <p>FAX 03-5829-3481</p>
-        </div>
-        <div class="footer-grid-item">
             <p>ijc.watanabe@gmail.com</p>
-            <p>資本金 500万円 代表者名渡辺晶子</p>
+            <p>代表者名 渡辺晶子</p>
         </div>
-        <div class="footer-grid-item">
-            <p>宅建業免許番号　東京都知事(1)第112754 設立日 令和1年10月17日</p>
+        <div class="footer-grid-item address-details">
+            <p>〒111-0052 東京都台東区柳橋2-2-3 西田ビル 2F</p>
+            <p>宅建業免許番号 東京都知事(1)第112754</p>
+            <p>設立日 令和1年10月17日</p>
+            <p>資本金 500万円</p>
         </div>
     </div>
+</div>
 </div>
 
 <footer>
