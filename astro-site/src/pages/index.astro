@@ -263,7 +263,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       z-index: 1;
       filter: brightness(0.6) grayscale(0.8);
     }
-    .service-item:hover, .service-item.is-active { flex-grow: 2; }
+    /* When hovering the container, shrink all items equally */
+    .service-container:hover .service-item {
+      flex-grow: 0.4;
+    }
+    /* Override: expand the currently hovered or active item */
+    .service-container .service-item:hover,
+    .service-container .service-item.is-active {
+      flex-grow: 3;
+    }
     .service-item:hover::before, .service-item.is-active::before {
       transform: scale(1.15);
       filter: brightness(0.8) grayscale(0);
@@ -359,7 +367,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     /* ----- Responsive ----- */
     @media (max-width: 1024px) {
       .service-container { flex-direction: column; height: auto; }
-      .service-item { flex-grow: 1 !important; height: 350px; }
+      .service-item { flex-grow: 1 !important; height: 420px; }
       .department-item { flex-direction: column !important; }
       .department-image { min-width: 100%; height: 250px; }
       #department-intro .img-zoom-container, .department-image img { height: 100%; }
@@ -382,7 +390,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       .hero h1 { font-size: 2.2rem; }
       .hero p { font-size: 1rem; }
       .hero h1 br { display: block; }
-      .service-item { height: auto; min-height: 38.6vw; max-height: 60vh; }
+      .service-item { height: auto; min-height: 52vw; max-height: 75vh; }
       .image-nav-container { flex-direction: column; }
       .image-nav-item { height: 200px; }
       .about-us-text p { text-align: left; }
