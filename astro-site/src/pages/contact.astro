@@ -1,0 +1,202 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="お問い合わせ | 王子建設不動産"
+  description="王子建設不動産のお問い合わせページです。不動産・建築などのことならイノベーション情報株式会社にお任せください。"
+  currentPage="contact"
+>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <style>
+    .contact-page-container {
+      display: flex;
+      max-width: 1200px;
+      margin: 50px auto;
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+    .contact-info-section {
+      flex: 1;
+      padding: 40px;
+      background: #2c3e50;
+      color: white;
+    }
+    .contact-info-section h2 {
+      font-size: 1.8rem;
+      margin-top: 0;
+      border-bottom: 2px solid #f39c12;
+      padding-bottom: 10px;
+    }
+    .contact-info-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-info-section li {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: flex-start;
+    }
+    .contact-info-section .icon {
+      margin-right: 15px;
+      font-size: 1.5rem;
+      color: #f39c12;
+      flex-shrink: 0;
+    }
+    .contact-info-section .text-block p {
+      margin: 0;
+      padding: 0;
+    }
+    .contact-form-section {
+      flex: 2;
+      padding: 40px;
+    }
+    .contact-form-section h2 {
+      font-size: 1.8rem;
+      margin-top: 0;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+    .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    .submit-button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background-color: #3498db;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .submit-button:hover {
+      background-color: #2980b9;
+    }
+    .submit-button:disabled, .submit-button.cooldown {
+      background-color: #95a5a6;
+      cursor: not-allowed;
+      color: #ecf0f1;
+    }
+
+    @media (max-width: 768px) {
+      .contact-page-container {
+        flex-direction: column;
+        margin: 20px;
+      }
+      .contact-info-section, .contact-form-section {
+        padding: 30px;
+      }
+    }
+  </style>
+
+  <div class="contact-page-container">
+    <div class="contact-info-section">
+      <h2>イノベーション情報株式会社</h2>
+      <ul>
+        <li>
+          <span class="material-symbols-outlined icon">location_on</span>
+          <div class="text-block">
+            <p>〒111-0052</p>
+            <p>東京都台東区柳橋2-2-3 西田ビル 2F</p>
+          </div>
+        </li>
+        <li>
+          <span class="material-symbols-outlined icon">call</span>
+          <div class="text-block">
+            <p>TEL 03-5829-3548</p>
+            <p>FAX 03-5829-3481</p>
+            <p>080-4432-8883</p>
+          </div>
+        </li>
+        <li>
+          <span class="material-symbols-outlined icon">mail</span>
+          <div class="text-block">
+            <p>ijc.info1017@gmail.com(代表)</p>
+            <p>ijc.watanabe@gmail.com</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="contact-form-section">
+      <h2>お問い合わせ</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" name="user_name" placeholder="お名前" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="user_email" placeholder="メールアドレス" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" name="user_phone" placeholder="お電話" />
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="お問い合わせ内容" required></textarea>
+        </div>
+        <button type="submit" id="send-btn" class="submit-button">送信する</button>
+      </form>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  emailjs.init("Du5s6wCOIH4_VBCD8");
+
+  document.getElementById('contact-form')!.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const btn = document.getElementById('send-btn') as HTMLButtonElement;
+    const originalText = btn.innerText;
+
+    if (btn.disabled) return;
+
+    btn.innerText = '送信中...';
+    btn.disabled = true;
+
+    const serviceID = 'service_kt9avrg';
+    const templateID = 'template_d08oy78';
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        alert('お問い合わせありがとうございます。送信されました！');
+        (document.getElementById('contact-form') as HTMLFormElement).reset();
+
+        let countdown = 30;
+        btn.classList.add('cooldown');
+
+        const timer = setInterval(() => {
+          btn.innerText = `送信完了 (${countdown}秒後に再送信可)`;
+          countdown--;
+          if (countdown < 0) {
+            clearInterval(timer);
+            btn.disabled = false;
+            btn.classList.remove('cooldown');
+            btn.innerText = originalText;
+          }
+        }, 1000);
+      }, (err: any) => {
+        alert('送信に失敗しました。もう一度お試しください。\nError: ' + JSON.stringify(err));
+        btn.innerText = originalText;
+        btn.disabled = false;
+      });
+  });
+</script>

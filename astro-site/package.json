@@ -1,0 +1,14 @@
+{
+  "name": "oji-real-estate",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.13.0",
+    "playwright": "^1.61.1"
+  }
+}

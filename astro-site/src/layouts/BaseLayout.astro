@@ -1,0 +1,299 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  /** Which page is active: 'home' | 'intro' | 'contact' */
+  currentPage?: 'home' | 'intro' | 'contact';
+}
+const { title, description, currentPage } = Astro.props;
+
+const nav = [
+  { label: 'ホーム',     href: '/',        page: 'home' as const },
+  { label: '会社概要',   href: '/intro',   page: 'intro' as const },
+  { label: '事業内容',   href: '/#dynamic-services', page: '' },
+  { label: '事業紹介',   href: '/#department-intro', page: '' },
+  { label: '採用情報',   href: '/intro',   page: 'intro' as const },
+  { label: 'お問合せ',   href: '/contact', page: 'contact' as const },
+];
+---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {description && <meta name="description" content={description} />}
+  <title>{title}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #fff;
+      padding: 1rem 5%;
+      border-bottom: 2px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .header-contact-info {
+      display: flex;
+      gap: 20px;
+      font-size: 0.9rem;
+      color: #555;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .info-item { display: flex; align-items: center; text-align: left; }
+    .info-item .icon { margin-right: 5px; font-size: 1.1rem; color: #f39c12; }
+    .info-item .text-wrap { display: flex; flex-direction: column; }
+    .info-item p { margin: 0; padding: 0; }
+    .info-item a { color: inherit; text-decoration: none; }
+    .logo a { display: block; line-height: 0; }
+    .logo img { height: 50px; width: auto; }
+
+    /* Nav */
+    nav {
+      display: flex;
+      justify-content: flex-start;
+      padding: 15px 0;
+    }
+    nav a, nav span.nav-current {
+      margin-left: 0;
+      padding: 0 20px;
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    nav span.nav-current {
+      color: #333;
+    }
+    nav a:not(:last-child)::after,
+    nav span.nav-current:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 60%;
+      width: 1px;
+      background-color: #ccc;
+    }
+    nav a::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 50%;
+      background-color: #f39c12;
+      transition: width 0.3s ease-out, left 0.3s ease-out;
+    }
+    nav a:hover::before {
+      width: calc(100% - 40px);
+      left: 20px;
+    }
+
+    /* Hamburger */
+    #menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      z-index: 1010;
+    }
+    #menu-toggle span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 5px 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Company info */
+    .company-info {
+      background: #444;
+      padding: 30px 5%;
+      color: #fff;
+      text-align: left;
+    }
+    .company-info h3 { font-size: 1.5rem; margin-top: 0; margin-bottom: 20px; }
+    .company-info p { margin: 5px 0; }
+    .company-header-container { max-width: 1000px; margin: 0 auto 20px auto; }
+    .footer-grid {
+      display: flex;
+      max-width: 1000px;
+      margin: 0 auto;
+      gap: 50px;
+      justify-content: space-between;
+      text-align: left;
+    }
+    .footer-grid-item.contact-info { flex: 1; min-width: 250px; }
+    .footer-grid-item.address-details { flex: 1; min-width: 400px; }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 5%;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .header-top { flex-direction: column; align-items: center; }
+      nav { justify-content: center; }
+      .footer-grid { flex-direction: column; gap: 20px; padding-left: 5%; }
+      .footer-grid-item { min-width: auto; max-width: none; flex: none; }
+    }
+
+    @media (max-width: 768px) {
+      .header-top { flex-direction: row; justify-content: space-between; }
+      .header-bottom { display: none; }
+      #menu-toggle { display: block; }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 80px 0 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 280px;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+      }
+      nav.is-open { transform: translateX(0); }
+      nav a, nav span.nav-current {
+        margin: 15px 0;
+        padding: 10px;
+        width: 80%;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      nav a:not(:last-child)::after,
+      nav span.nav-current:not(:last-child)::after { content: none; }
+      nav a:hover::before { width: 80%; left: 10%; }
+      .header-contact-info { display: none; }
+      .info-item { flex-direction: row; text-align: center; align-items: center; }
+      .company-info h3, .company-info { text-align: center; }
+      .footer-grid-item.contact-info, .footer-grid-item.address-details { text-align: center; }
+      .footer-grid { padding-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="logo">
+        <a href="/">
+          <img src="/assists/images/logo.jpg" alt="王子建設不動産 - 運営：イノベーション情報株式会社" />
+        </a>
+      </div>
+      <div class="header-contact-info">
+        <div class="info-item">
+          <span class="material-symbols-outlined icon">location_on</span>
+          <div class="text-wrap">
+            <p>〒111-0052</p>
+            <p>東京都台東区柳橋2-2-3 西田ビル 2F</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="text-wrap">
+            <p><span class="material-symbols-outlined icon">call</span><a href="javascript:void(0);" onclick="copyToClipboard('03-5829-3548')"> 03-5829-3548</a></p>
+            <p><span class="material-symbols-outlined icon">mail</span><a href="javascript:void(0);" onclick="copyToClipboard('ijc.info1017@gmail.com')"> ijc.info1017@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="text-wrap">
+            <p><span class="material-symbols-outlined icon">fax</span> 03-5829-3481</p>
+            <p><span class="material-symbols-outlined icon">schedule</span> 9:00 - 18:00</p>
+          </div>
+        </div>
+      </div>
+      <button id="menu-toggle" aria-label="ナビゲーションを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="header-bottom"></div>
+    <nav id="main-nav">
+      {nav.map(item => item.page && item.page === currentPage ? (
+        <span class="nav-current">{item.label}</span>
+      ) : (
+        <a href={item.href}>{item.label}</a>
+      ))}
+    </nav>
+  </header>
+
+  <slot />
+
+  <div class="company-info">
+    <div class="company-header-container">
+      <h3>イノベーション情報株式会社 (王子建設不動産)</h3>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-grid-item contact-info">
+        <p>TEL 03-5829-3548</p>
+        <p>FAX 03-5829-3481</p>
+        <p>ijc.watanabe@gmail.com</p>
+        <p>代表者名 渡辺晶子</p>
+      </div>
+      <div class="footer-grid-item address-details">
+        <p>〒111-0052 東京都台東区柳橋2-2-3 西田ビル 2F</p>
+        <p>宅建業免許番号 東京都知事(1)第112754</p>
+        <p>設立日 令和1年10月17日</p>
+        <p>資本金 500万円</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 イノベーション情報株式会社. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function copyToClipboard(text: string) {
+      navigator.clipboard.writeText(text).then(function() {
+        alert('コピーしました: ' + text);
+      }).catch(function(err: any) {
+        console.error('コピーに失敗しました: ', err);
+      });
+    }
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+    if (menuToggle && mainNav) {
+      menuToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('is-open');
+      });
+    }
+  </script>
+</body>
+</html>
