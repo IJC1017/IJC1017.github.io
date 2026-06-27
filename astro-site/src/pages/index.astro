@@ -265,12 +265,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     }
     /* When hovering the container, shrink all items equally */
     .service-container:hover .service-item {
-      flex-grow: 0.4;
+      flex-grow: 0.6;
     }
-    /* Override: expand the currently hovered or active item */
-    .service-container .service-item:hover,
-    .service-container .service-item.is-active {
-      flex-grow: 3;
+    /* Override: expand the currently hovered item (~1.5x) */
+    .service-container .service-item:hover {
+      flex-grow: 1.1;
     }
     .service-item:hover::before, .service-item.is-active::before {
       transform: scale(1.15);
@@ -559,7 +558,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     hero.classList.add('is-visible');
     sections.forEach(section => observer.observe(section));
 
-    // Service item click handler
+    // Service item background images + click to toggle intro (mobile)
     const serviceItems = document.querySelectorAll('.service-item');
     serviceItems.forEach(item => {
       const imageUrl = item.getAttribute('data-bg-url');
@@ -567,9 +566,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         item.style.setProperty('--bg-url', `url(${imageUrl})`);
       }
       item.addEventListener('click', function() {
-        serviceItems.forEach(otherItem => {
-          if (otherItem !== this) otherItem.classList.remove('is-active');
-        });
         this.classList.toggle('is-active');
       });
     });
